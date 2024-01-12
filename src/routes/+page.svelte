@@ -1,8 +1,8 @@
 <script>
 	import Layout from "$lib/+layout.svelte";
-	
+
 	let clicks = 0;
-	
+
 	async function Click() {
 		let body = document.querySelector("body");
 		let score = document.getElementById("score");
@@ -43,18 +43,17 @@
 </script>
 
 <Layout>
-	<div class="top-0 right-0 bottom-0 left-0 absolute" on:click={Click}>
-	</div>
-	
+	<div class="top-0 right-0 bottom-0 left-0 absolute" on:click={Click}></div>
+
 	<div class="mt-[75px]">
 		<div class="w-fit bg-[#ffffff] px-2 mx-auto rounded-lg">
-			<p class="text-[30px] text-[#5a6dfa]">EmuOtori</p>
+			<p class="text-[30px] text-[#5a6dfa]">Emu Otori</p>
 		</div>
-		
+
 		<p id="score" class="text-[40px] text-[#ffffff] mt-[25px]">0</p>
-		
+
 		<div class="w-fit bg-[#ffffff] mt-[80%] px-2 mx-auto rounded-lg">
-			<p class="text-[19px] text-[#5a6dfa]"> Click Everywhere To Summon Emu! </p>
+			<p class="text-[19px] text-[#5a6dfa]">Click Everywhere To Summon Emu!</p>
 		</div>
 	</div>
 </Layout>
