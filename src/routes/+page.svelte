@@ -5,7 +5,7 @@
 
 	async function SummonEmu(trigger) {
 		if (trigger == "click" && event.pointerType != "mouse") return;
-		
+
 		let body = document.querySelector("body");
 		let score = document.getElementById("score");
 		let img = document.createElement("img");
@@ -45,7 +45,11 @@
 </script>
 
 <Layout>
-	<div class="top-0 right-0 bottom-0 left-0 absolute" on:click={(event) => SummonEmu("click", event)} on:touchstart={(event) => SummonEmu("touch", event)}></div>
+	<div
+		class="top-0 right-0 bottom-0 left-0 absolute"
+		on:click={event => SummonEmu("click", event)}
+		on:touchstart={event => SummonEmu("touch", event)}
+	></div>
 
 	<div class="mt-[75px]">
 		<div class="w-fit bg-[#ffffff] px-2 mx-auto rounded-lg">
