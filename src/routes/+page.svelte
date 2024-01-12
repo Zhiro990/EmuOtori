@@ -58,7 +58,7 @@
 
 		<p id="score" class="text-[40px] text-[#ffffff] mt-[25px]">0</p>
 
-		<div class="w-fit bg-[#ffffff] mt-[80%] px-2 mx-auto rounded-lg">
+		<div class="w-fit bg-[#ffffff] mt-[325px] px-2 mx-auto rounded-lg">
 			<p class="text-[19px] text-[#5a6dfa]">Click Everywhere To Summon Emu!</p>
 		</div>
 	</div>
