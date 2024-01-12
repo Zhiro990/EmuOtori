@@ -1,3 +1,3 @@
-<div class="text-center pt-[50px]">
-	<p class="text-[17px] text-[#dddddd]">Created by Zhiro990</p>
+<div class="text-center pt-[25px]">
+	<p class="text-[17px] text-[#ffffff]">Created with ❤ by Zhiro990<br>Thanks to Deltadyoo for this brilliant idea</p>
 </div>

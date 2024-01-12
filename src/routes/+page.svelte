@@ -1,11 +1,10 @@
 <script>
 	import Layout from "$lib/+layout.svelte";
-	import Footer from "$lib/+footer.svelte";
-
+	
 	let clicks = 0;
-
+	
 	async function Click() {
-		let main = document.querySelector("main");
+		let body = document.querySelector("body");
 		let score = document.getElementById("score");
 		let img = document.createElement("img");
 		let audio = document.createElement("audio");
@@ -26,8 +25,8 @@
 
 		score.innerHTML = clicks;
 
-		main.appendChild(img);
-		main.appendChild(audio);
+		body.appendChild(img);
+		body.appendChild(audio);
 
 		audio.play();
 
@@ -37,21 +36,25 @@
 			audio.currentTime = 0;
 			audio.src = audio.src;
 
-			main.removeChild(img);
-			main.removeChild(audio);
+			body.removeChild(img);
+			body.removeChild(audio);
 		}, 3000);
 	}
 </script>
 
 <Layout>
-	<div class="w-full h-auto pt-[75px]">
-		<p id="score" class="text-[21px] text-[#ffffff]">0</p>
-		<button
-			class="w-[75px] h-[75px] bg-[#ffffff] text-[#5a6dfa] mt-[300px] md:mt-[70%] shadow-2xl rounded-full"
-			on:click={Click}
-		>
-			Click
-		</button>
+	<div class="top-0 right-0 bottom-0 left-0 absolute" on:click={Click}>
 	</div>
-	<Footer />
+	
+	<div class="mt-[75px]">
+		<div class="w-fit bg-[#ffffff] px-2 mx-auto rounded-lg">
+			<p class="text-[30px] text-[#5a6dfa]">EmuOtori</p>
+		</div>
+		
+		<p id="score" class="text-[40px] text-[#ffffff] mt-[25px]">0</p>
+		
+		<div class="w-fit bg-[#ffffff] mt-[80%] px-2 mx-auto rounded-lg">
+			<p class="text-[19px] text-[#5a6dfa]"> Click Everywhere To Summon Emu! </p>
+		</div>
+	</div>
 </Layout>
