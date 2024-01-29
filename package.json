@@ -9,10 +9,6 @@
 		"lint": "npx prettier --check \"{*,src/**/*}.{js,json,html,css,svelte}\"",
 		"format": "npx prettier --write \"{*,src/**/*}.{js,json,html,css,svelte}\""
 	},
-	"dependencies": {
-		"@prisma/client": "^5.8.0",
-		"prisma": "^5.8.0"
-	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/adapter-vercel": "^4.0.4",
