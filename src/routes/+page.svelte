@@ -21,7 +21,7 @@
 
 		clicks++;
 
-		img.src = "./pictures/emuotori.png";
+		img.src = "./pictures/emuotori.webp";
 		img.style = `width: ${size}px; ${coord_y_from}: ${coord_y}%; ${coord_x_from}: ${coord_x}%; position: absolute; transform: rotate(${angle}deg); user-select: none; pointer-events: none;`;
 		img.alt = "Emu Otori";
 
