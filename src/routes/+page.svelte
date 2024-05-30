@@ -54,7 +54,7 @@
 		on:touchstart={event => SummonEmu("touch", event)}
 	>
 		<div
-			class="w-fit h-auto bg-[#ffffff] px-[10px] mt-[75px] mx-auto rounded-lg"
+			class="w-fit h-auto bg-[#ffffff] px-[20px] py-[5px] mt-[75px] mx-auto rounded-lg"
 		>
 			<p class="font-bold text-[21px] text-[#5a6dfa]">EmuOtori</p>
 		</div>
