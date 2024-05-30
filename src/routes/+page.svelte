@@ -56,17 +56,11 @@
 		<div
 			class="w-fit h-auto bg-[#ffffff] px-[10px] mt-[75px] mx-auto rounded-lg"
 		>
-			<p class="text-[25px] text-[#5a6dfa]">EmuOtori</p>
+			<p class="font-bold text-[21px] text-[#5a6dfa]">EmuOtori</p>
 		</div>
 
-		<div class="w-full h-auto">
+		<div class="w-full h-auto mb-[325px]">
 			<p id="score" class="text-[30px] text-[#ffffff] mt-[25px]">0</p>
-		</div>
-
-		<div
-			class="w-fit h-auto bg-[#ffffff] text-center mt-[325px] px-[10px] mx-auto rounded-lg"
-		>
-			<p class="text-[19px] text-[#5a6dfa]">Click Anywhere To Summon Emu!</p>
 		</div>
 
 		<Footer />
